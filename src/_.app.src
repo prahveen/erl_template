@@ -1,0 +1,16 @@
+{application, {{name}},
+ [{description, "{{name}}"},
+  {vsn, "{{version}}"},
+  {registered, []},
+  {mod, {{{name}}_app, []}},
+  {applications,
+   [kernel,
+    stdlib
+   ]},
+  {env,[]},
+  {modules, []},
+
+  {maintainers, []},
+  {licenses, ["Apache 2.0"]},
+  {links, []}
+ ]}.
