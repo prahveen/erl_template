@@ -1,0 +1,29 @@
+%%-*- mode: erlang -*-
+{description, "Generates an simple erlang application"}.
+{variables, [
+    {name, "simple", "name of the application to build"},
+    {version, "0.1", "default version for the application"},
+    {author_name, "Prahveen Thiruchelvam", "name of the the author"},
+    {author_email, "prahveen29@gmail.com", "email address of the author"},
+    {copyright_year, "2017", "copyright year"}
+]}.
+
+%% main project files
+{template, "_README.md", "{{name}}/README.md"}.
+{template, "_README.maintainer", "{{name}}/README.maintainer"}.
+{template, "_COPYING", "{{name}}/COPYING"}.
+{template, "_AUTHORS", "{{name}}/AUTHORS"}.
+{template, "_NEWS", "{{name}}/NEWS"}.
+{template, "_ChangeLog", "{{name}}/ChangeLog"}.
+{template, "Makefile", "{{name}}/Makefile"}.
+{template, "rebar.config", "{{name}}/rebar.config"}.
+{template, "dot.gitignore", "{{name}}/.gitignore"}.
+
+{template, "src/_.app.src", "{{name}}/src/{{name}}.app.src"}.
+{template, "src/_app.erl", "{{name}}/src/{{name}}_app.erl"}.
+{template, "src/_sup.erl", "{{name}}/src/{{name}}_sup.erl"}.
+{template, "include/_.hrl", "{{name}}/include/{{name}}.erl"}.
+
+{template, "sys.config", "{{name}}/config/sys.config"}.
+{template, "vm.args", "{{name}}/config/vm.args"}.
+
