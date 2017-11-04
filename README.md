@@ -1,5 +1,4 @@
 simple demo
-==========
 
 Usage
 -----
