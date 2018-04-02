@@ -22,6 +22,7 @@
 {template, "src/_.app.src", "{{name}}/src/{{name}}.app.src"}.
 {template, "src/_app.erl", "{{name}}/src/{{name}}_app.erl"}.
 {template, "src/_sup.erl", "{{name}}/src/{{name}}_sup.erl"}.
+{template, "test/_SUITE.erl", "{{name}}/test/{{name}}_SUITE.erl"}.
 {template, "include/_.hrl", "{{name}}/include/{{name}}.erl"}.
 
 {template, "sys.config", "{{name}}/config/sys.config"}.
