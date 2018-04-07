@@ -1,1 +1,1 @@
--module({{name_SUITE}}).
+-module({{name}}_SUITE).
